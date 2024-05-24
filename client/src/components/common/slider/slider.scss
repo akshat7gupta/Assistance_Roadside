@@ -1,0 +1,79 @@
+@import "styles/styles.scss";
+@import "./theme-slider.scss";
+
+@import "../../../../node_modules/slick-carousel/slick/slick.css";
+@import "../../../../node_modules/slick-carousel/slick/slick-theme.css";
+
+.header-slider {
+  height: 300px;
+  width: 100%;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    background: cover;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .slick-arrow,
+  .slick-next {
+    display: none !important;
+  }
+
+  .slick-dots {
+    position: absolute;
+    top: 467px;
+  }
+
+  .header-slider-center {
+    outline: none;
+    width: 100%;
+    height: 100vh;
+
+    h1 {
+      margin: 1.7em;
+      padding: 5px;
+      position: absolute;
+      top: 60px;
+      left: -1px;
+    }
+  }
+
+  .header-slider-text {
+    padding: 1em;
+    margin: 4em;
+    position: absolute;
+    top: 131px;
+    left: 3px;
+    border-radius: 3px;
+    word-wrap: no-wrap;
+
+    @include for-tablet-portrait-up {
+      width: 70%;
+    }
+
+    @include for-desktop-up {
+      width: 43%;
+    }
+
+    p {
+      width: 70%;
+      display: block;
+    }
+
+    .char {
+      animation: an 1s ease-out 1 both;
+      display: inline-block;
+    }
+
+    .mylink {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      padding: 0.6rem;
+    }
+  }
+}

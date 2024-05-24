@@ -1,0 +1,16 @@
+@import 'theme-vehicle-types.scss';
+
+.vehicle-types {
+    text-align: center;
+    padding: 3.5rem;
+
+    .vehicle-types-container {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .vehicle-types-line {
+        font-weight: bold;
+        padding: 0 7px;
+    }
+}

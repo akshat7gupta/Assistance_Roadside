@@ -1,0 +1,15 @@
+@import 'styles/styles.scss';
+
+.vehicle-offers {
+    margin: 4em auto;
+    text-align: center;
+
+    .vehicle-offers-header {
+        text-align: center;
+        margin: 1em auto 3em auto;
+    }
+
+    .vehicle-offers-content {
+        margin: 1em auto;
+    }
+}

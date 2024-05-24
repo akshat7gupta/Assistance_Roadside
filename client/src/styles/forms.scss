@@ -1,0 +1,55 @@
+@import './breakpoints.scss';
+@import './theme/theme-forms.scss';
+
+input {
+    width: 90%;
+    margin: 0.5em auto;
+    cursor: text;
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+    padding: 0.2em;
+    border-radius: 1px;
+    outline: none;
+
+    @include for-desktop-up {
+        width: 45%;
+    }
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+textarea {
+    display: block;
+    width: 90%;
+    height: 180px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0.2em;
+    outline: none;
+    resize: none;
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea:focus,
+input:focus {
+    transition: all 0.3s ease-in-out;
+}
+
+input[type='submit'] {
+    border: none;
+    font-weight: lighter;
+    width: auto;
+    margin: 1rem;
+    padding: 10px 16px;
+}
+
+input[type='submit']:hover {
+    cursor: pointer;
+    font-weight: bold;
+}

@@ -1,0 +1,28 @@
+@import "styles/styles.scss";
+@import "./theme-top-bar.scss";
+
+.top-bar {
+    margin: 0;
+
+    .top-bar-wrapper {
+        @include for-tablet-portrait-up {
+            display: block;
+        }
+
+        @include for-desktop-up {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row;
+            align-items: center;
+        }
+    }
+
+    .contacts-container {
+        display: block;
+
+        @include for-desktop-up {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

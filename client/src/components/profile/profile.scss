@@ -1,0 +1,18 @@
+@import 'styles/styles.scss';
+
+.profile {
+    width: 60%;
+    margin: 2em auto;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 3px 7px 10px 3px rgba(0, 0, 0, 0.3);
+
+    .profile-info-wrapper {
+        display: flex;
+        margin: 20px 5px;
+
+        strong {
+            width: 15%;
+        }
+    }
+}

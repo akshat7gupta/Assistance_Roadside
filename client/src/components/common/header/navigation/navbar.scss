@@ -1,0 +1,54 @@
+@import "styles/styles.scss";
+@import "./theme-navbar.scss";
+
+.navbar-wrapper {
+    margin: -10px 0;
+
+    @include for-tablet-portrait-up {
+        display: block;
+    }
+
+    @include for-desktop-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-container {
+        text-align: center;
+
+        @include for-desktop-up {
+            text-align: left;
+        }
+
+        img {
+            width: 50%;
+
+            @include for-desktop-up {
+                width: 16%;
+            }
+        }
+    }
+
+    ul {
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        li {
+            text-align: center;
+            padding: 0 0.2em;
+
+            @include for-desktop-up {
+                display: inline-block;
+            }
+
+            &:last-child {
+                padding: 0 0 0 0.3em;
+            }
+
+            a {
+                font-size: 0.76em;
+            }
+        }
+    }
+}

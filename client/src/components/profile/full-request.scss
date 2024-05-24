@@ -1,0 +1,25 @@
+@import './theme-full-request.scss';
+
+.full-request {
+    text-align: right;
+
+    .request-main {
+        margin-bottom: 20px;
+
+        article {
+            text-align: left;
+            border-radius: 4px;
+            padding: 10px 20px;
+            margin: 0 10px 0 0;
+            min-width: 185px;
+        }
+    }
+
+    .request-btn {
+        margin: 7px 10px;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 8px 20px;
+        border-radius: 4px;
+    }
+}

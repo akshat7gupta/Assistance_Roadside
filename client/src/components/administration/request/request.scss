@@ -1,0 +1,27 @@
+@import 'styles/styles.scss';
+@import './theme-request.scss';
+
+.request {
+    border-radius: 4px;
+    margin: 10px auto;
+    padding: 10px;
+
+    .request-main {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .request-heading {
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .request-content {
+        font-size: 13px;
+    }
+
+    .request-btn {
+        margin: 10px 0;
+    }
+}

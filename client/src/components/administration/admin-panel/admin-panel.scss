@@ -1,0 +1,18 @@
+@import "styles/styles.scss";
+@import './theme-admin-panel.scss';
+
+.admin-panel {
+    width: 60%;
+    margin: 2em auto;
+    padding: 20px;
+    border-radius: 4px;
+
+    // Hide react data component default header container
+    header {
+        display: none;
+    }
+
+    .waiting-status {
+        background: red !important;
+    }
+}

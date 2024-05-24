@@ -1,0 +1,39 @@
+@import 'theme-contact-form.scss';
+
+.contact-form {
+    padding: 1.5em;
+    text-align: center;
+
+    @include for-desktop-up {
+        width: 50%;
+        margin: 1.5em auto;
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .textarea-label {
+        width: 85%;
+    }
+
+    .name-label, .phone-label {
+        @include for-desktop-up {
+            margin-right: 1em;
+        }
+    }
+
+    .contact-form-title,
+    .contact-form-subtitle {
+        text-align: center;
+    }
+
+    .contact-form-subtitle {
+        margin: .5em auto;
+
+        .contact-form-subtitle-line {
+            font-weight: bold;
+        }
+    }
+}

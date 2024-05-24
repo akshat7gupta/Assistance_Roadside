@@ -1,0 +1,10 @@
+@import './theme-copyright.scss';
+
+.copyright {
+    padding-bottom: 1em;
+    margin-bottom: 0;
+
+    a {
+        color: $main-color;
+    }
+}

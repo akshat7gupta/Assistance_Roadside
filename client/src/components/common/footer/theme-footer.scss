@@ -1,0 +1,21 @@
+@import 'styles/styles.scss';
+
+.footer {
+    .main-footer-wrapper {
+        background: #000;
+        color: #fff;
+
+            a {
+                color: #fff;
+            }
+
+            h6 {
+                font-weight: bold;
+            }
+        }
+
+    .bottom-footer-wrapper {
+        background: $dark-color;
+        color: #fff;
+    }
+}
